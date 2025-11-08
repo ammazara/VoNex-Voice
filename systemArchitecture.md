@@ -86,14 +86,14 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 [Backend - Node.js + Express]
        ↔ [MongoDB Atlas Database]
        ↕
-  [Twilio / Africa's Talking API]
+  [Twilio API]
        ↕
  [User’s Local Network / Device]
 
  ## Data Flow
 
 ### 1️⃣ User Authentication
-1. User opens the **NaijaVoice** web app and logs in using **email or Google Sign-In**.  
+1. User opens the **VoNex** web app and logs in using **email or Google Sign-In**.  
 2. **Frontend** sends credentials securely to the **backend** via `HTTPS`.  
 3. **Backend** verifies credentials through **Firebase Auth** and returns a **JWT token**.  
 4. Token is stored locally (in session storage) to allow secure API access for subsequent actions.  
@@ -102,7 +102,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ### 2️⃣ Making a Call
 1. User initiates a **call** from the dashboard interface.  
-2. **Backend** receives the call request and triggers **Twilio** or **Africa’s Talking API** to create a voice session.  
+2. **Backend** receives the call request and triggers **Twilio** to create a voice session.  
 3. API connects both caller and receiver, while the backend logs **call metadata** (caller ID, receiver, timestamp, duration).  
 4. **MongoDB** stores call records.  
 5. **Frontend** fetches updated data via a WebSocket or periodic refresh to update the user’s dashboard in real time.  
@@ -110,7 +110,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 ---
 
 ### 3️⃣ Receiving SMS
-1. Incoming SMS hits a configured **webhook endpoint** provided by Twilio/Africa’s Talking.  
+1. Incoming SMS hits a configured **webhook endpoint** provided by Twilio.  
 2. **Backend** processes message payload (sender, receiver, content, timestamp).  
 3. Message data is stored in **MongoDB** under the user’s message collection.  
 4. **Frontend** retrieves new messages from `/api/messages` endpoint at intervals or via socket events.  
@@ -144,7 +144,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 ### 🧩 Stack Efficiency
 - **Node.js + Express:** Lightweight, event-driven backend ideal for handling real-time calls, SMS, and API requests.  
 - **MongoDB Atlas:** Flexible NoSQL database suited for storing unstructured telecom data such as call logs, messages, and voicemails.  
-- **React.js (PWA):** Delivers an app-like experience in browsers — reducing dependency on native apps during MVP phase.  
+- **React.js (PWA):** Delivers an app-like experience in browsers, reducing dependency on native apps during MVP phase.  
 - **Twilio API:** Provides telecom-level performance without building local infrastructure from scratch.
 
 ---
@@ -178,7 +178,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 ### 👨‍💻 Development Feasibility
 - The chosen stack (Node.js, React, MongoDB) is **open-source, well-documented**, and widely adopted by Nigerian developers.  
 - Strong local developer communities and affordable hosting options make the stack easy to maintain.  
-- Minimal infrastructure cost for MVP — can be deployed using **AWS Free Tier** or **Render.com** for early testing.  
+- Minimal infrastructure cost for MVP can be deployed using **AWS Free Tier** or **Render.com** for early testing.  
 - Modular backend structure allows quick integration of third-party APIs and services as the product evolves.
 
 ---
