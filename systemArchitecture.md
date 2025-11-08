@@ -141,7 +141,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ## Technical Feasibility
 
-### Stack Efficiency
+### 🧩 Stack Efficiency
 - **Node.js + Express:** Lightweight, event-driven backend ideal for handling real-time calls, SMS, and API requests.  
 - **MongoDB Atlas:** Flexible NoSQL database suited for storing unstructured telecom data such as call logs, messages, and voicemails.  
 - **React.js (PWA):** Delivers an app-like experience in browsers — reducing dependency on native apps during MVP phase.  
@@ -149,7 +149,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ---
 
-### API Reliability
+### 🔗 API Reliability
 - **Twilio** offers proven uptime (>99%) and is already operational in Nigeria.  
 - APIs support essential services; number provisioning, voice routing, SMS delivery, and webhooks — ensuring real-time communication.  
 - Failover and redundancy built into these APIs minimize downtime during high traffic.  
@@ -157,7 +157,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ---
 
-### Cloud Infrastructure
+### ☁️ Cloud Infrastructure
 - **AWS EC2:** Reliable virtual server environment for hosting backend services.  
 - **AWS S3:** Scalable and secure storage for voicemail audio files and logs.  
 - **MongoDB Atlas:** Cloud-hosted database with automatic backups and clustering.  
@@ -166,7 +166,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ---
 
-###  Security and Compliance
+### 🔐 Security and Compliance
 - **HTTPS + TLS Encryption:** Ensures secure data transfer between client, server, and APIs.  
 - **OAuth2 Authentication:** Protects API endpoints and user sessions with industry-standard authorization.  
 - **AES-256 Encryption:** Encrypts sensitive user information and stored credentials.  
@@ -175,7 +175,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ---
 
-###  Development Feasibility
+### 👨‍💻 Development Feasibility
 - The chosen stack (Node.js, React, MongoDB) is **open-source, well-documented**, and widely adopted by Nigerian developers.  
 - Strong local developer communities and affordable hosting options make the stack easy to maintain.  
 - Minimal infrastructure cost for MVP — can be deployed using **AWS Free Tier** or **Render.com** for early testing.  
@@ -183,7 +183,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ---
 
-### Scalability Path
+### 🚀 Scalability Path
 - **Phase 1:** Launch in Nigeria using Twilio for local numbers.  
 - **Phase 2:** Expand to other African markets (Ghana, Kenya) by swapping the telephony provider while maintaining the same backend.  
 - **Phase 3:** Integrate mobile payment options for credit purchases (via Paystack or Flutterwave).  
