@@ -33,3 +33,4 @@ It simplifies personal and business communication while reducing dependency on p
 
 ### Vision
 VoNex aims to make communication borderless, reliable, and affordable; starting with Nigeria. By bridging telecom and internet layers, it enables a new era of **virtual telephony** for the world.
+
