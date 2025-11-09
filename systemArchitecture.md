@@ -31,7 +31,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
    - Supports Google Sign-in and email-based access  
 
 2. **Call & SMS Service**
-   - Routes calls and SMS via Twilio or Africa’s Talking  
+   - Routes calls and SMS via Twilio 
    - Handles call recording, forwarding, and real-time logs  
 
 3. **Voicemail Service**
@@ -80,7 +80,6 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ## Communication Flow
 
-```plaintext
 [User Interface - React PWA]
        ↓ HTTPS
 [Backend - Node.js + Express]
@@ -89,6 +88,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
   [Twilio API]
        ↕
  [User’s Local Network / Device]
+
 
  ## Data Flow
 
@@ -141,7 +141,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ## Technical Feasibility
 
-### 🧩 Stack Efficiency
+### Stack Efficiency
 - **Node.js + Express:** Lightweight, event-driven backend ideal for handling real-time calls, SMS, and API requests.  
 - **MongoDB Atlas:** Flexible NoSQL database suited for storing unstructured telecom data such as call logs, messages, and voicemails.  
 - **React.js (PWA):** Delivers an app-like experience in browsers, reducing dependency on native apps during MVP phase.  
@@ -149,15 +149,15 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ---
 
-### 🔗 API Reliability
+### API Reliability
 - **Twilio** offers proven uptime (>99%) and is already operational in Nigeria.  
-- APIs support essential services; number provisioning, voice routing, SMS delivery, and webhooks — ensuring real-time communication.  
-- Failover and redundancy built into these APIs minimize downtime during high traffic.  
+- API supports essential services; number provisioning, voice routing, SMS delivery, and webhooks, ensuring real-time communication.  
+- Failover and redundancy built into this API minimize downtime during high traffic.  
 - Local carrier integration ensures call stability and number verification across MTN, Glo, Airtel, and 9mobile networks.
 
 ---
 
-### ☁️ Cloud Infrastructure
+### Cloud Infrastructure
 - **AWS EC2:** Reliable virtual server environment for hosting backend services.  
 - **AWS S3:** Scalable and secure storage for voicemail audio files and logs.  
 - **MongoDB Atlas:** Cloud-hosted database with automatic backups and clustering.  
@@ -166,7 +166,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ---
 
-### 🔐 Security and Compliance
+### Security and Compliance
 - **HTTPS + TLS Encryption:** Ensures secure data transfer between client, server, and APIs.  
 - **OAuth2 Authentication:** Protects API endpoints and user sessions with industry-standard authorization.  
 - **AES-256 Encryption:** Encrypts sensitive user information and stored credentials.  
@@ -175,7 +175,7 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ---
 
-### 👨‍💻 Development Feasibility
+### Development Feasibility
 - The chosen stack (Node.js, React, MongoDB) is **open-source, well-documented**, and widely adopted by Nigerian developers.  
 - Strong local developer communities and affordable hosting options make the stack easy to maintain.  
 - Minimal infrastructure cost for MVP can be deployed using **AWS Free Tier** or **Render.com** for early testing.  
@@ -183,13 +183,14 @@ It leverages reliable cloud telephony API (Twilio) and modern web technologies t
 
 ---
 
-### 🚀 Scalability Path
+### Scalability Path
 - **Phase 1:** Launch in Nigeria using Twilio for local numbers.  
-- **Phase 2:** Expand to other African markets (Ghana, Kenya) by swapping the telephony provider while maintaining the same backend.  
-- **Phase 3:** Integrate mobile payment options for credit purchases (via Paystack or Flutterwave).  
+- **Phase 2:** Expand to other African markets (Eg. Ghana, Kenya) by swapping the telephony provider while maintaining the same backend.  
+- **Phase 3:** Integrate mobile payment options for credit purchases and subscriptions (via Paystack or Flutterwave).  
 - **Phase 4:** Introduce mobile apps (React Native) with push notifications and offline caching.  
 - **Phase 5:** Add AI-driven voicemail sorting and translation into local languages (Hausa, Yoruba, Igbo).  
 
-
+link to user-flow on google drive
 https://drive.google.com/drive/folders/1VToUR0gVQjevDbsVLpSOH9VB2ZdLB_S1?usp=sharing
-link to images
+ 
+
